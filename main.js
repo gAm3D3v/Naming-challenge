@@ -14,11 +14,14 @@ const dict = {
 const questions = 7;
 let answerArray = [];
 const gameContainer = document.querySelector('.gameContainer');
+const audio = document.querySelector('.gameMusic');
+let musicPlay = false;
 
 /* Define buttons from the page */
 const submitBtn = document.querySelector('.submit-btn');
 const resetBtn = document.querySelector('.reset-btn');
 const soundBtn = document.querySelector('.sound-btn');
+
 
 function loadQuestions() 
 {
@@ -76,3 +79,19 @@ for(let i = 0 ; i < inputs.length; i++)
  document.querySelector('.marks').innerText = marks;
  document.querySelector('.hidden').classList.remove('hidden');
 });
+
+soundBtn.addEventListener('click', () => {
+    if (musicPlay)
+    {
+        musicPlay = false;
+        document.querySelector('.sound-on').classList.add('none');
+        document.querySelector('.sound-off').classList.remove('none');
+        audio.muted = true;
+    }
+    else {
+        musicPlay = true;
+        document.querySelector('.sound-off').classList.add('none');
+        document.querySelector('.sound-on').classList.remove('none');
+        audio.muted = false;
+    }
+})
