@@ -8,36 +8,13 @@
 </head>
 <body class="game-page" onload="loadQuestions()">
     
-    <section class="upper-section navigation inline-flex space-around">
-        <div class="burger-menu drop-down game-menu">
-            <button type="button" class="game-btn">
-                <img src="../data/images/icons/categories_list.png" alt="image of burger menu" class="nav-logo">
-            </button>
-        </div>
-
-        <div class="marks-container none-user-select">
+    <section class="upper-section navigation inline-flex space-around"> 
+        <div class="marks-container hidden none-user-select">
             <button type="button" class="game-btn marks nav-logo">60</button>
         </div>
-
-        <div class="inline-flex space-around">
-            <div>
-                <button type="button" class="game-btn reset-btn">
-                    <img src="../data/images/icons/reset.png" class="nav-logo" >
-                </button>
-                <button type="button" class="game-btn sound-btn">
-                    <img src="../data/images/icons/sound.png" class="nav-logo sound-on none">
-                    <img src="../data/images/icons/mute_sound.png" class="nav-logo sound-off">
-                    <audio src="../data/sounds/game-music.mp3" class="gameMusic" autoplay muted></audio>
-                </button>
-            </div>
-        </div>
     </section>
 
-    <section class="mid-section gameContainer flex space-around"> 
-       
-
-        
-    </section>
+    <section class="mid-section gameContainer flex space-evenly"></section>
     <div class="absolute bottom-center flex">
         <button type="button" class="submit-btn">SUBMIT</button>
     </div>
