@@ -41,22 +41,13 @@ body
 }
 
 /** CSS Design of game page */
-.upper-section
-{
-    position: relative;
-    top: 5%;
-}
-.navigation 
-{
-    width: 100%;
-}
-.inline-flex
-{
-    display: inline-flex;
-}
 .space-around
 {
     justify-content: space-around;
+}
+.space-evenly
+{
+    justify-content: space-evenly;
 }
 .game-btn
 {
@@ -85,12 +76,11 @@ body
 .mid-section 
 {
     position: relative;
-    top: 15%;
     margin: auto;
 }
 
 .gameContainer{
-    min-height: 60vh;
+    min-height: 80vh;
     width: 80vw;
     padding: 1em;
     flex-wrap: wrap;
@@ -105,18 +95,14 @@ body
     width: 14vw;
     gap: .4em;
 }
-.gameImage
-{
-    height: 15vh;
-}
 .flex.column 
 {
     flex-direction: column;
 }
 .text-box {
     text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
+    text-transform: lowercase;
+    font-weight: 500;
     max-width:max-content;
     font-size: 1em;
 }
@@ -145,3 +131,18 @@ background-color: #fc2f28;
     cursor: pointer;
 }
 
+@media only screen and (max-width:980px)
+{
+    .gameImage
+    {
+        height: 19vh;
+    }
+}
+
+@media screen and (min-width:980px)
+{
+    .gameImage
+    {
+        height: 24vh;
+    }
+}
