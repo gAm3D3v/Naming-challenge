@@ -67,6 +67,10 @@ body
 {
     height: 6vh;
 }
+.none
+{
+    display: none;
+}
 .marks{
     font-size: 6vh;
     font-weight: 600;
