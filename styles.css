@@ -1,0 +1,132 @@
+body
+{
+    height: 100vh;
+    font-size: 24px;
+    background: url(./data/images/background.webp);
+}
+
+/** CSS design of start page */
+.start-game 
+{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.center
+{
+    margin: auto;
+    top: 50%;
+}
+.game-btn.start
+{
+    border: none;
+    background: rgba(250,250,250,0);
+    height: fit-content;
+}
+.game-btn:hover 
+{
+    cursor: pointer;
+}
+.start.logo
+{
+    animation: resize 3s linear  infinite;
+}
+@keyframes resize 
+{
+    0% {height: 8vh;}
+    30% {height: 10vh;}
+    50% {height: 12vh;}
+    70% {height: 10vh;}
+    100% {height: 8vh;}
+}
+
+/** CSS Design of game page */
+.upper-section
+{
+    position: relative;
+    top: 5%;
+}
+.navigation 
+{
+    width: 100%;
+}
+.inline-flex
+{
+    display: inline-flex;
+}
+.space-around
+{
+    justify-content: space-around;
+}
+.game-btn
+{
+    background-color: rgba(250,255,250,0.4);
+    border-radius: 15%;
+}
+.nav-logo
+{
+    height: 6vh;
+}
+.marks{
+    font-size: 6vh;
+}
+.hidden
+{
+    visibility: hidden;
+}
+
+.mid-section 
+{
+    position: relative;
+    top: 15%;
+    margin: auto;
+}
+
+.gameContainer{
+    border: 3px solid black;
+    min-height: 60vh;
+    width: 80vw;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+.flex
+{
+    display: flex;
+}
+.image-question 
+{
+    height: fit-content;
+    width: 14vw;
+    gap: .4em;
+}
+.gameImage
+{
+    height: 15vh;
+}
+.flex.column 
+{
+    flex-direction: column;
+}
+.text-box {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    max-width:max-content;
+    font-size: 1em;
+}
+.bottom 
+{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: .5em;
+}
+.submit-btn
+{
+    background-color: burlywood;
+      
+    font-weight: 600;
+    font-size: 6vh;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
