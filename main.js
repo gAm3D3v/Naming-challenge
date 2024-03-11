@@ -11,16 +11,12 @@ const dict = {
     hyena: '../data/images/animals/hyena.jpg'
 }
 
-const questions = 7;
+const questions = 8;
 let answerArray = [];
 const gameContainer = document.querySelector('.gameContainer');
-const audio = document.querySelector('.gameMusic');
-let musicPlay = false;
 
 /* Define buttons from the page */
 const submitBtn = document.querySelector('.submit-btn');
-const resetBtn = document.querySelector('.reset-btn');
-const soundBtn = document.querySelector('.sound-btn');
 
 
 function loadQuestions() 
@@ -55,10 +51,7 @@ function randWord(array)
     return array[num];
 }
 
-resetBtn.addEventListener('click', () => {
-    gameContainer.innerHTML = " ";
-    loadQuestions();
-}, false);
+
 
 submitBtn.addEventListener('click', ()=> {
 let marks = 0;
@@ -80,18 +73,3 @@ for(let i = 0 ; i < inputs.length; i++)
  document.querySelector('.hidden').classList.remove('hidden');
 });
 
-soundBtn.addEventListener('click', () => {
-    if (musicPlay)
-    {
-        musicPlay = false;
-        document.querySelector('.sound-on').classList.add('none');
-        document.querySelector('.sound-off').classList.remove('none');
-        audio.muted = true;
-    }
-    else {
-        musicPlay = true;
-        document.querySelector('.sound-off').classList.add('none');
-        document.querySelector('.sound-on').classList.remove('none');
-        audio.muted = false;
-    }
-})
