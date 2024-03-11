@@ -69,6 +69,9 @@ body
 }
 .marks{
     font-size: 6vh;
+    font-weight: 600;
+    color: black;
+    border: none;
 }
 .hidden
 {
@@ -83,7 +86,6 @@ body
 }
 
 .gameContainer{
-    border: 3px solid black;
     min-height: 60vh;
     width: 80vw;
     padding: 1em;
@@ -114,19 +116,28 @@ body
     max-width:max-content;
     font-size: 1em;
 }
-.bottom 
+.wrong-answer
+{
+background-color: #fc2f28;
+}
+.correct-answer
+{
+    background-color: #90ff50;
+}
+.bottom-center
 {
     position: absolute;
     bottom: 0;
+    left: 40%;
     padding-bottom: .5em;
 }
 .submit-btn
 {
     background-color: burlywood;
-      
+    margin: auto;      
     font-weight: 600;
     font-size: 6vh;
-    border-radius: 15%;
+    border-radius: 9%;
     cursor: pointer;
 }
 
